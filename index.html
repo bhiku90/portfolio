@@ -32,6 +32,10 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+        .act{
+            display: flex;
+            gap: 50px;
+        }
 
         header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -369,6 +373,10 @@
         }
 
         @media screen and (max-width: 768px) {
+            .act{
+                display: flex;
+                flex-direction: column;
+            }
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -750,13 +758,18 @@
         </div>
         <br><br>
         <div class="container">
-            <p>
-                During my second semester, I participated in a Social Immersion Program that gave me the opportunity to engage with students at a local government school. As a team, we organized a drawing competition to encourage the students to express themselves creatively. It was a truly rewarding experience that allowed us to interact closely with the children and understand their perspectives.
-
-One of the most memorable moments for me was personally participating in the drawing competition. I expressed my creativity through art and was proud to have secured second place. More than the achievement itself, it was the joy of sharing ideas, engaging with young minds, and contributing to a fun learning environment that made the experience truly special.
-
-This experience taught me the value of community engagement and highlighted how creative activities can have a meaningful and positive impact on students’ lives. It strengthened my belief in the importance of empathy, teamwork, and giving back to society.
-            </p>
+            <div class="act">
+                <p style="text-align: justify;">
+                    During my second semester, I participated in a Social Immersion Program that gave me the opportunity to engage with students at a local government school. As a team, we organized a drawing competition to encourage the students to express themselves creatively. It was a truly rewarding experience that allowed us to interact closely with the children and understand their perspectives.
+    
+    One of the most memorable moments for me was personally participating in the drawing competition. I expressed my creativity through art and was proud to have secured second place. More than the achievement itself, it was the joy of sharing ideas, engaging with young minds, and contributing to a fun learning environment that made the experience truly special.
+    
+    This experience taught me the value of community engagement and highlighted how creative activities can have a meaningful and positive impact on students’ lives. It strengthened my belief in the importance of empathy, teamwork, and giving back to society.
+                </p>
+                <div>
+                    <img src="./assets/student.jpg" alt=""  width="500">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -788,9 +801,8 @@ This experience taught me the value of community engagement and highlighted how 
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/shaikh-musaib-074360154/"><i class="fab fa-linkedin"></i></a>
+           
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <p>&copy; 2025 Shaikh Mohd Musaib. All rights reserved.</p>
