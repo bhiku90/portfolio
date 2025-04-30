@@ -216,6 +216,16 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
+        .blink-heart {
+  color: red;
+  animation: blink 1s infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
         .card {
             background-color: var(--card-bg);
@@ -583,7 +593,10 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Musaib</a>
+                <a href="#" class="logo"> Musaib
+                    <i class="fas fa-heart blink-heart"></i>
+                    Purnpama
+                  </a>
                 <button class="menu-btn" id="menuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
