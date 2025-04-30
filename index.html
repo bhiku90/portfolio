@@ -25,6 +25,9 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+        .student-image{
+            width: 500px;
+        }
 
         body {
             background-color: var(--background-color);
@@ -146,6 +149,25 @@
             background-color: var(--accent-color);
             color: white;
         }
+        .act {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .act img{
+    width: 500px;
+  }
+
+  .act p {
+    flex: 1;
+    order: 1;
+  }
+
+  .act div {
+    flex: 1;
+    order: 2;
+    width: 50%;
+  }
 
         .btn-primary:hover {
             background-color: #e5006c;
@@ -373,10 +395,24 @@
         }
 
         @media screen and (max-width: 768px) {
-            .act{
+            .act {
                 display: flex;
-                flex-direction: column;
-            }
+               flex-direction: column;
+                }
+                .act img {
+                        width: 200%;
+                              height: auto;
+                       display: block;
+                        object-fit: contain;
+}
+                .act p {
+                  flex: 1 1 50%;
+                     }
+
+                   .act div {
+                         flex: 1 1 50%;
+                         max-width: 50%;
+                        }
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -766,8 +802,8 @@
     
     This experience taught me the value of community engagement and highlighted how creative activities can have a meaningful and positive impact on students’ lives. It strengthened my belief in the importance of empathy, teamwork, and giving back to society.
                 </p>
-                <div>
-                    <img src="./assets/student.jpg" alt=""  width="500">
+                <div >
+                    <img  src="./assets/student.jpg" alt="" >
                 </div>
             </div>
         </div>
